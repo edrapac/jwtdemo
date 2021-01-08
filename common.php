@@ -12,7 +12,7 @@ function getToken() {
 function createTokenObject() {
     return array(
         # Issuer
-        "iss" => "http://demo.sjoerdlangkemper.nl/",
+        "iss" => "https://netspi.com/",
 
         # Issued at
         "iat" => time(),
@@ -21,7 +21,8 @@ function createTokenObject() {
         "exp" => time() + 120,
 
         "data" => [
-            "hello" => "world"
+            "user" => "admin",
+            "internal_recovery_codes" => "abc123"
         ]
     );
 }

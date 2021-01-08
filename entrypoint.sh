@@ -1,6 +1,6 @@
 #!/bin/bash
 composer install 
-
+rm index.html # we want the default page to show our index.php
 function exportBoolean {
     if [ "${!1}" = "**Boolean**" ]; then
             export ${1}=''
